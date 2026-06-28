@@ -1,0 +1,319 @@
+/* Global Styles */
+
+body {
+    margin: 0;
+    font-family: "Sansita", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+span {
+    text-decoration: underline;
+}
+
+/* Headings */
+
+h1 {
+    font-family: "Sacramento", cursive;
+    font-size: 3.6rem;
+    margin: 0;
+}
+
+h2 {
+    font-family: "Merriweather", serif;
+}
+
+/* Top Section */
+
+.top {
+    background-color: #11999E;
+    text-align: center;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+    padding-top: 40px;
+}
+
+/* Profile Image */
+
+.first {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 50%;
+}
+
+/* Developer Text */
+
+.dev {
+    font-size: 1.3rem;
+    margin-top: 10px;
+}
+
+/* Clouds */
+
+.cloudone {
+    position: absolute;
+    top: 50px;
+    right: 150px;
+}
+
+.cloudtwo {
+    position: absolute;
+    top: 260px;
+    left: 150px;
+}
+
+/* Mountain */
+
+.mountain {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    margin-top: 0;
+}
+
+/* Explorer */
+
+.explorer {
+    width: 164px;
+    position: absolute;
+    bottom: 334px;
+    left: 122px;
+}
+
+/* Divider */
+
+hr {
+    border: none;
+    border-top: 5px dotted black;
+    width: 50px;
+    
+}
+.line {
+    border: none;
+    border-top: 5px dotted gray;
+    width: 50px;
+    margin: 100px auto;
+}
+
+/* Middle Section */
+
+.middle {
+    background-color: #66BFBF;
+    min-height: 100vh;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+/* About Container */
+
+.middle-outer-container {
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Developer Image */
+
+.Second {
+    width: 200px;
+    height: auto;
+}
+
+/* Hello Text */
+
+.hello {
+    font-family: "Sansita", sans-serif;
+    font-size: 2rem;
+    margin-top: 20px;
+}
+
+/* Intro Paragraph */
+
+.beginner {
+    max-width: 600px;
+    margin: 20px auto;
+    line-height: 1.8;
+}
+
+/* Guy Image */
+
+.guy {
+    width: 600px;
+    max-width: 100%;
+    display: block;
+    margin: 40px auto;
+}
+
+/* What I Can Do */
+
+.cando {
+    max-width: 800px;
+    margin: 40px auto;
+    text-align: left;
+    line-height: 2;
+}
+
+/* Checklist Image */
+
+.list {
+    width: 80px;
+    float: left;
+    margin-right: 20px;
+}
+
+/* Content Beside Checklist */
+
+.inner-list {
+    overflow: hidden;
+}
+
+.inner-list ul {
+    padding-left: 20px;
+}
+
+/* Skills Section */
+
+.skills {
+    margin-top: 80px;
+}
+
+.skills h2 {
+    margin-bottom: 40px;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.skill-card {
+    width: 180px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.skill-card img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+.skill-card h3 {
+    margin-top: 15px;
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+
+    h1 {
+        font-size: 2.8rem;
+    }
+
+    .cloudone {
+        right: 20px;
+        width: 100px;
+    }
+
+    .cloudtwo {
+        left: 20px;
+        width: 100px;
+    }
+
+    .explorer {
+        width: 120px;
+        left: 20px;
+        bottom: 50px;
+    }
+
+    .Second {
+        width: 150px;
+    }
+
+    .guy {
+        width: 180px;
+    }
+
+    .list {
+        float: none;
+        display: block;
+        margin: 0 auto 20px;
+    }
+
+    .cando {
+        text-align: center;
+    }
+
+    .inner-list ul {
+        text-align: left;
+        display: inline-block;
+    }
+
+    .skills-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.contact-message {
+    width: 40%;
+    margin: 40px auto 60px;
+}
+
+.copyright {
+    color: #eaf6f6;
+    font-size: 0.75rem;
+    padding: 20px 0;
+}
+
+.btn {
+  background: #11cdd4;
+  background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -moz-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -o-linear-gradient(top, #11cdd4, #11999e);
+  background-image: linear-gradient(to bottom, #11cdd4, #11999e);
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+  font-family: "Sansita", sans-serif;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #30e3cb;
+  background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
+  text-decoration: none;
+}
+
+.bottom {
+    text-align: center;
+    background-color: #696969;
+    padding: 50px 0 20px;
+}
+
+a {
+    color: #66BFBF;
+    font-family: "Sansita", sans-serif;
+    margin: 10px 20px;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #eaf6f6;
+}
